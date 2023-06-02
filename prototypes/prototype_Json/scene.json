@@ -1,0 +1,55 @@
+{
+	"scene" : {
+		"background" : "black",
+		"camera" : {
+			"position" : {
+				"x" : 5,
+				"y" : 0,
+				"z" : 5
+			},
+			"direction" : {
+				"horizontal" : 0,
+				"vertical" : 20
+			},
+			"focal": 5 
+		},
+		"geometries" : [
+			{
+				"cube" : {
+					"origin" : { 
+						"x":0,
+						"y":10,
+						"z":5 
+					},
+					"orientation": {
+						"x" : 0,
+						"y" : 0,
+						"z" : 0					
+					},
+					"length" : 5,
+					"color": "orange"
+				} 
+			},
+			{
+				"sphere" : {
+					"center" : {
+						"x" : 10,
+						"y" : 10,
+						"z" : 5
+					},
+					"orientation": {
+						"x": 10,
+						"y" : 0,
+						"z" : 0
+					},
+					"radius" : 5,
+					"color": "green"
+				} 
+			}
+		],
+		"sources" : [
+			{ "x": 0, "y": 0, "z":0 },
+			{ "x": 10, "y": 10, "z":10 }
+		]
+	}
+}

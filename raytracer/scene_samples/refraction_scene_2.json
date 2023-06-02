@@ -1,0 +1,87 @@
+{
+	"resolution": {
+		"width" : 800,
+		"height" : 600
+	},
+	"camera" : {
+		"position" : {
+			"x" : -1,
+			"y" : 0,
+			"z" : -2
+		},
+		"direction" : {
+			"horizontal" : 15,
+			"vertical" : -25
+		},
+		"focal": 3,
+		"fov" : 68
+	},
+	"scene" : {
+		"max_rebounds" : 2,
+		"background" : "black",
+		"rendering" : "phong, reflection, transparency",
+		"geometries" : [ 
+			{
+				"type" : "cube",
+				"form" : {
+					"center" : { 
+						"x":2,
+						"y":28,
+						"z":-10
+					},
+					"orientation": {
+						"x" : 5,
+						"y" : -8,
+						"z" : 20					
+					},
+					"length" : 6,
+					"color": "orangered",
+					"shininess" : 0.5,
+					"reflection" : 0,
+					"transparency" : false,
+					"refraction" : 0
+				} 
+			}, {
+				"type" : "sphere",
+				"form" : {
+					"center" : {
+						"x" : 7,
+						"y" : 20,
+						"z" : -10
+					},
+					"orientation": {
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"radius" : 5,
+					"color": "teal",
+					"shininess" : 0.5,
+					"reflection" : 0.6,
+					"transparency" : true,
+					"refraction" : 1.07
+				} 
+			}, {
+				"type" : "damier",
+				"form" : {
+					"base" : {
+						"x" : -100,
+                        "y" : 0,
+                        "z" : -15
+                    },
+					"orientation" : "horizontal", 
+                    "length" : 200,
+                    "width" : 200,
+                    "color" : "gray",
+                    "shininess" : 0.5,
+					"reflection" : 0.5,
+					"transparency" : false,
+					"refraction" : 0
+                }
+			}
+		],
+		"sources" : [
+			{ "x": 12, "y": 6, "z": 5 }
+		]
+	}
+}

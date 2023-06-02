@@ -1,0 +1,106 @@
+{
+	"resolution": {
+		"width" : 800,
+		"height" : 600
+	},
+	"camera" : {
+		"position" : {
+			"x" : 5,
+			"y" : -15,
+			"z" : 0
+		},
+		"direction" : {
+			"horizontal" : 0,
+			"vertical" : 0
+		},
+		"focal": 3,
+		"fov" : 68
+	},
+	"scene" : {
+		"max_rebounds" : 2,
+		"background" : "gainsboro",
+		"rendering" : "advanced",
+		"geometries" : [ 
+			{
+				"type" : "cube",
+				"form" : {
+					"center" : { 
+						"x":-10,
+						"y":30,
+						"z":10 
+					},
+					"orientation": {
+						"x" : 30,
+						"y" : 0,
+						"z" : 45					
+					},
+					"length" : 5,
+					"color": "red",
+					"shininess" : 0.5,
+					"reflection" : 0,
+					"transparency": false,
+					"refraction" : 0
+				} 
+			}, {
+				"type" : "sphere",
+				"form" : {
+					"center" : {
+						"x" : 5,
+						"y" : 20,
+						"z" : 0
+					},
+					"orientation": {
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"radius" : 7,
+					"color": "aqua",
+					"shininess" : 1,
+					"reflection" : 0.1,
+					"transparency": true,
+					"refraction" : 1
+				} 
+			},{
+				"type" : "cube",
+				"form" : {
+					"center" : {
+						"x" : 100,
+						"y" : 300,
+						"z" : 0
+					},
+					"orientation": {
+						"x" : 0,
+						"y" : 0,
+						"z" : 20
+					},
+					"length" : 200,
+					"color": "gold",
+					"shininess" : 0.3,
+					"reflection" : 0,
+					"transparency": false,
+					"refraction" : 0
+				} 
+			},{
+				"type" : "damier",
+				"form" : {
+					"base" : {
+						"x" : -100,
+                        "y" : 0,
+                        "z" : -15
+                    },
+					"orientation" : "horizontal", 
+                    "length" : 200,
+                    "width" : 200,
+                    "color" : "grey",
+                    "shininess" : 0.5,
+					"reflection" : 0.3,
+					"transparency": 0
+                }
+			}
+		],
+		"sources" : [
+			{ "x": 10, "y": 5, "z": 10 }
+		]
+	}
+}

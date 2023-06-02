@@ -1,0 +1,86 @@
+{
+	"resolution": {
+		"width" : 400,
+		"height" : 320
+	},
+	"camera" : {
+		"position" : {
+			"x" : 5,
+			"y" : -15,
+			"z" : -12
+		},
+		"direction" : {
+			"horizontal" : 0,
+			"vertical" : 0
+		},
+		"focal": 3,
+		"fov" : 68
+	},
+	"scene" : {
+		"max_rebounds" : 2,
+		"background" : "gainsboro",
+		"rendering" : "phong, occlusion",
+		"geometries" : [ 
+			{
+				"type" : "sphere",
+				"form" : {
+					"center" : { 
+						"x":20,
+						"y":20,
+						"z":-14 
+					},
+					"orientation": {
+						"x" : 0,
+						"y" : 0,
+						"z" : 0					
+					},
+					"radius" : 6,
+					"color": "red",
+					"shininess" : 0.5,
+					"reflection" : 0.3,
+					"transparency": false,
+					"refraction" : 50.0
+				} 
+			}, {
+				"type" : "cube",
+				"form" : {
+					"center" : {
+						"x" : 5,
+						"y" : 10,
+						"z" : -12
+					},
+					"orientation": {
+						"x" : 0,
+						"y" : 0,
+						"z" : 45
+					},
+					"length" : 6,
+					"color": "aqua",
+					"shininess" : 1,
+					"reflection" : 0,
+					"transparency": false,
+					"refraction": 1.16
+				} 
+			},{
+				"type" : "damier",
+				"form" : {
+					"base" : {
+						"x" : -100,
+                        "y" : -5,
+                        "z" : -15
+                    },
+					"orientation" : "horizontal", 
+                    "length" : 200,
+                    "width" : 200,
+                    "color" : "grey",
+                    "shininess" : 0.5,
+					"reflection" : 0.3,
+					"transparency": false
+                }
+			}
+		],
+		"sources" : [
+			{ "x": 10, "y": 0, "z": 5 }
+		]
+	}
+}
